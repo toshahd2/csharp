@@ -1,0 +1,17 @@
+﻿Console.Clear();
+Console.WriteLine("Введите координаты точки А:");
+Console.Write("x = ");
+int xa = Convert.ToInt32(Console.ReadLine());
+Console.Write("y = ");
+int ya = Convert.ToInt32(Console.ReadLine());
+Console.Write("z = ");
+int za = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты точки B:");
+Console.Write("x = ");
+int xb = Convert.ToInt32(Console.ReadLine());
+Console.Write("y = ");
+int yb = Convert.ToInt32(Console.ReadLine());
+Console.Write("z = ");
+int zb = Convert.ToInt32(Console.ReadLine());
+double length = Math.Round(Math.Abs(Math.Sqrt(Math.Pow(xb-xa, 2) + Math.Pow(yb-ya, 2) + Math.Pow(zb-za, 2))), 2);
+Console.WriteLine($"Расстояние между точкой А({xa},{ya},{za}) и точкой B({xb},{yb},{zb}) составляет {length}");
